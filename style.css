@@ -1,0 +1,955 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    text-decoration: none;
+}
+
+.max-width{
+    max-width: 1300px;
+    margin: 0 auto;
+    padding: 0 40px;
+    overflow: hidden;
+}
+
+.menu-btn{
+    color: #111;
+    font-size: 23px;
+    cursor: pointer;
+    display: none;
+}
+
+/*NavBar*/
+
+.navbar{
+position: fixed;
+width: 100%;
+padding: 25px 0px;
+z-index: 999;
+}
+
+.navbar .max-width{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar.sticky{
+    padding: 10px 0px;
+    background-color: #e2a355;
+}
+
+.navbar .max-width .logo img{
+width: 70px;
+height: 70px;
+object-fit: cover;
+}
+
+.navbar .nav-menu{
+        display: flex;
+}
+
+.navbar .nav-menu ul{
+    display: flex;
+}
+
+.navbar .nav-menu li{
+    list-style: none; 
+  
+}
+
+.navbar .nav-menu li a{
+    color: black;
+    font-weight: 400;
+    padding: 0 12px;
+    transition: all 0.3s ease;
+}
+
+.navbar .nav-menu li a:hover{
+    color:gray;
+}
+
+.navbar .search{
+    display: flex;
+    align-items: center;  
+}
+
+.navbar .search input{
+    height: 25px;
+    border-radius: 15px;
+    padding: 0px 6px;
+    background-color: #c3bfbc;
+    border: none; 
+}
+
+.navbar .search i{
+    margin-left: -30px;
+}
+
+/*Home*/
+.home{
+    display: flex;
+    background: url("images/bg1.png") no-repeat center;
+    height: 160vh;
+}
+
+.home .max-width{
+    margin: auto 0 auto 40px;
+}
+
+.home .home-content .title{
+    font-size: 90px;
+    color: #e2a355;
+    font-weight: bold;
+    text-shadow: -1px -2px 4px gray;
+}
+
+.home .home-content h3{
+    font-size: 32px;
+    font-style: italic;
+    font-weight: 500;
+    padding-bottom: 60px;
+    text-transform: uppercase;
+}
+
+.home .home-content a{
+    color: #776c64;
+    background: white;
+    padding: 4px 30px;
+    font-size: 20px;
+    font-weight: 600;
+    border-radius: 10px;
+    transition: all 0.3s ease;
+}
+
+.home .home-content a:hover{
+    background: none;
+    border: 2px solid #776c64;
+}
+
+.home .home-content p{
+    padding: 30px 0px;
+    width: 45%;
+    font-size: 18px;
+    font-style: italic;
+}
+
+/*Menu*/
+
+.menu .text h2{
+    font-size: 50px;
+    color: #e2a355;
+    font-weight: bold;
+    text-align: center;
+}
+
+.menu .text p{
+    padding: 30px 30%;
+    text-align: center;
+    font-size: 20px;
+}
+
+.menu{
+    background: url("images/bgg2.png") no-repeat bottom left;
+    background-size: 480px;
+}
+
+.menu .menu-content1 .cards{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    max-width: 30vw;
+}
+
+.menu .menu-content1 .card{
+   padding: 0px 25px;
+    transition: transform 0.3s ease;
+}
+
+.menu .menu-content1 .card:hover{
+    transform: scale(1.1);
+    /*box-shadow: 0px 4px 6px  rgb(128, 125, 125);*/
+}
+
+.menu .menu-content1 img{
+    margin: 0%;
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+}
+
+.menu .menu-content1 .text1{
+    margin-top: -4px;
+    padding: 15% 4% 20% 4%;
+    color: white;
+    background-color: #7f7770;
+}
+
+.menu .menu-content1 .text1 h4{
+    font-size: 22px;
+    padding: 10px 0px;
+}
+
+.menu .menu-content1 .text1 p{
+    font-size: 20px;
+}
+
+.menu .menu-content1 a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 5% 37% 10% 37%;
+    color: white;
+    background: #776c64;
+    padding: 10px 10px;
+    font-size: 20px;
+    font-weight: 600;
+    border-radius: 20px;
+    border: 2px solid #776c64;
+    transition: all 0.3s ease;
+}
+
+.menu .menu-content1 a:hover{
+    background: none;
+    color: #776c64;
+}
+
+.menu2 .max-width{
+    margin-top: 5%;
+    padding: 0;
+}
+
+.menu2 .menu-content2{
+    display: flex;
+}
+
+.menu2 .menu-content2 .left{
+background: #deb37e;
+}
+
+.menu2 .menu-content2 .right{
+    background: #7f7770;
+    }
+
+.menu2 .menu-content2 img{
+    width: 100%;
+}
+
+.menu2 .menu-content2 .left .text{
+    margin: 22% 0% 20% 18%;
+    color: white;
+}
+
+.menu2 .menu-content2 .right .text{
+    margin: 22% 5% 30% 8%;
+    color: white;
+}
+
+.menu2 .menu-content2 .text h3{
+    font-size: 55px;
+}
+
+.menu2 .menu-content2 .text p{
+    font-size: 25px;
+    padding: 8% 0;
+}
+
+.menu2 .menu-content2 .text a{
+    color: white;
+    background: #e2a355;
+    padding: 10px 45px;
+    font-size: 20px;
+    font-weight: 600;
+    border-radius: 20px;
+    text-transform: uppercase;
+    transition: all 0.3s ease;
+}
+
+.menu2 .menu-content2 .text a:hover{
+    background: none;
+    border: 2px solid white;
+}
+
+.menu3{
+    background: url("images/bg3.png") no-repeat center;
+    height: 120vh;
+}
+
+.menu3 .text{
+    margin: 25% 0;
+    text-align: center;
+    color: white;
+}
+
+.menu3 .text h2{
+    font-size: 50px;
+    font-weight: 500;
+}
+
+.menu3 .text p{
+   font-size: 21px;
+   font-weight: lighter;
+   padding: 2% 20%;
+}
+
+/*OurStr*/
+
+.ourstr1{
+    background: url("images/bg4.png") no-repeat center;
+    height: 150vh;
+}
+
+.ourstr1 .text{
+    font-size: 60px;
+    font-style: italic;
+    margin: 30% 5%;
+}
+
+.ourstr1 .text h3{
+    display: flex;
+    justify-content: flex-end;
+    color: #deb37e;
+}
+
+.ourstr1 .text h2{
+    display: flex;
+    justify-content: flex-end;
+    color: black;
+}
+
+.ourstr2{
+    background: url("images/bbg2.png")no-repeat right bottom;
+    background-size: 450px;
+}
+
+.ourstr2 .ourstr-content{
+    margin: 10% 5%;
+}
+
+.ourstr2 .ourstr-content .grid{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.ourstr2 .ourstr-content .grid h4{
+    color: #deb37e;
+    font-size: 25px;
+    padding: 5% 0;
+}
+
+.ourstr2 .ourstr-content .grid p{
+    word-wrap: break-word;
+    font-size: 25;
+}
+
+.ourstr2 .text{
+    text-align: center;
+    margin-top: 20%;
+}
+
+.ourstr2 .text h3{
+    font-size: 45px;
+    font-style: italic;
+    letter-spacing: 5px;
+}
+
+.ourstr2 .text p{
+    font-size: 25;
+    padding:0 20% 5% 20%;
+}
+
+/*Contact Us*/
+.contact1{
+    background: url("images/bg5.png") no-repeat center;
+    height: 120vh;
+}
+
+.contact1 .contact-us{
+    text-align: center;
+    margin: 18% 18%;
+}
+
+.contact1 .contact-us h2{
+    font-size: 50px;
+    color: white;
+}
+
+.contact1 .contact-us p{
+    font-size: 20px;
+    padding: 5% 0;
+}
+
+.contact1 .contact-us input{
+    width: 55%;
+    border-radius: 20px;
+    border: none;
+    padding: 10px;
+}
+
+.contact1 .contact-us a{
+    color: white;
+    background: #776c64;
+    padding: 10px 25px;
+    font-size: 15px;
+    font-weight: 600;
+    border-radius: 20px;
+   margin-left: -4%;
+}
+
+.contact2{
+    background: url("images/bg6.png");
+}
+
+.contact2 .contact-us{
+   display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    margin: 15% 0;
+    justify-content: center;
+    align-items: center;
+   
+}
+
+.contact2 .contact-us >*:first-child{
+    grid-column: 1 /span 2;
+}
+
+.contact2 .text{
+    color: white;
+}
+
+.contact2 .text h3{
+    font-weight: lighter;
+    padding-bottom: 8%;
+}
+
+.contact2 .text p{
+    font-size: 15px;
+    width: 65%;
+}
+
+.contact2 .icons i{
+    padding: 5px 0;
+    font-size: 15px;
+    color: #7f7770;
+}
+
+.contact2 .icons .fa{
+    padding: 5px 0px;
+    width: 25px;
+    text-align: center;
+    text-decoration: none;
+    margin: 8px 5px;
+    border-radius: 50%;
+    background: white;
+}
+
+.contact2 .text ul{
+    list-style: none;
+}
+
+.contact2 .text ul a{
+    text-decoration: none;
+    color: white;
+    font-size: 15px;
+}
+
+
+/*Responsive*/
+
+@media screen and (max-width:1100px){
+    .home .home-content .title{
+        font-size: 80px;
+    }
+
+    .home .home-content h3{
+        font-size: 32px;
+    }
+
+    .menu2 .menu-content2 .left .text{
+        margin-bottom:10%;
+        color: white;
+    }
+    
+    .menu2 .menu-content2 .right .text{
+        margin-bottom:20%;
+        color: white;
+    }
+
+    .menu2 .menu-content2 .text h3{
+        font-size: 50px;
+    }
+    
+    .menu2 .menu-content2 .text p{
+        font-size: 23px;
+        padding: 8% 0;
+    }
+
+    .ourstr1 .text{
+        font-size: 50px;
+    }
+    
+
+}
+
+@media screen and (max-width:970px){
+  
+    .home .home-content .title{
+        font-size: 70px;
+    }
+    
+    .home .home-content h3{
+        font-size: 28px;
+        padding-bottom: 50px;
+    }
+    .home .home-content p{
+        padding: 30px 0px;
+        font-size: 18px;
+        width: 55%;
+    }
+
+    .menu .text h2{
+        font-size: 47px;
+    }
+    
+    .menu .text p{
+        font-size: 18px;
+    }
+    
+    .menu .menu-content1 img{
+        width: 270px;
+        height: 270px;
+        object-fit: cover;
+    }
+    
+    .menu .menu-content1 .text1{
+        margin-top: -4px;
+        padding: 15% 4% 20% 4%;
+    }
+    
+    .menu .menu-content1 .text1 h4{
+        font-size: 22px;
+        padding: 10px 0px;
+    }
+    
+    .menu .menu-content1 .text1 p{
+        font-size: 20px;
+    }
+
+    .menu2 .menu-content2 .left .text{
+        margin: 22% 0% 8% 18%;
+    }
+    
+    .menu2 .menu-content2 .right .text{
+        margin: 22% 5% 18% 8%;
+    }
+    
+    .menu2 .menu-content2 .text h3{
+        font-size: 45px;
+    }
+    
+    .menu2 .menu-content2 .text p{
+        font-size: 20px;
+    }
+
+    .ourstr1 .text{
+        font-size: 45px;
+    }
+
+    .ourstr2 .text p{
+            padding:0 12% 5% 12%;
+        }
+    }
+    
+
+@media screen and (max-width:768px){
+
+    .menu-btn{
+        display: block;
+        z-index: 999;
+    }
+    .navbar .nav-menu{
+        position: fixed;
+        height: 100vh;
+        width: 100%;
+        left: -200%;
+        top: 0px;;
+        text-align: center;
+        background-color: #e2a355;
+        padding-top: 80px;
+        transition: all 0.3s ease;
+    }
+
+    .menu-btn i.active::before{
+        content:" \f00d ";
+    }
+
+    .navbar .nav-menu.active{
+        left: 0;
+    }
+
+    .navbar .nav-menu,
+    .navbar .nav-menu ul{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .navbar .nav-menu li{
+        padding: 8px 0px;
+        font-size: 20px;
+        font-weight: bolder;
+    }
+
+    .home .home-content .title{
+        font-size: 60px;
+    }
+    
+    .home .home-content h3{
+        font-size: 23px;
+        padding-bottom: 50px;
+    }
+
+    .home .home-content p{
+        padding: 30px 0px;
+        font-size: 16px;
+        width: 60%;
+    }
+
+    .menu .text h2{
+        font-size: 44px;
+    }
+    
+    .menu .text p{
+        font-size: 16px;
+        padding: 30px 25%;
+    }
+
+    .menu .menu-content1 .cards{
+        flex-direction: column;
+    }
+
+    .menu .menu-content1 .card{
+        padding: 10px 0px;
+    }
+    
+    .menu .menu-content1 img{
+        width: 340px;
+        height: 340px;
+        object-fit: cover;
+    }
+
+    .menu3 .text{
+        margin: 40% 0;
+    }
+
+    .menu2 .menu-content2{
+        flex-direction: column;
+    }
+
+    .menu2 .menu-content2 .left .text{
+        margin: 22% 0% 20% 8%;
+    }
+    
+    .menu2 .menu-content2 .right .text{
+        margin: 22% 0% 20% 8%;
+    }
+
+    .ourstr1 .text{
+        font-size: 40px;
+    }
+    .ourstr2 .ourstr-content .grid{
+        grid-template-columns: 1fr;
+    }
+
+    .ourstr2 .ourstr-content .grid .box{
+        font-size: 15px;
+    }
+
+    .contact2 .contact-us{
+        display: grid;
+         grid-template-columns: repeat(2, 1fr);
+    }
+
+    .contact2 .contact-us .card{
+        padding-bottom: 20px;
+    }
+
+    .contact2 .contact-us >*:first-child{
+        grid-column: 1;
+    }
+}
+
+@media screen and (max-width:620px){
+    .home .home-content .title{
+        font-size: 45px;
+    }
+    
+    .home .home-content h3{
+        font-size: 18px;
+    }
+
+    .home .home-content a{
+        padding: 4px 25px;
+        font-size: 18px;    
+    }
+
+    .home .home-content p{
+        font-size: 16px;
+    }
+
+    .menu .text h2{
+        font-size: 40px;
+    }
+    
+    .menu .text p{
+        font-size: 13px;
+        padding: 30px 20%;
+    }
+
+.menu .menu-content1 a{
+    padding: 10px 10px;
+    font-size: 15px;
+}
+
+.menu2 .menu-content2 .text h3{
+    font-size: 38px;
+}
+
+.menu2 .menu-content2 .text p{
+    font-size: 18px;
+}
+
+.menu2 .menu-content2 .text a{
+    padding: 10px 30px;
+    font-size: 15px;
+}
+
+.menu3 .text h2{
+    font-size: 40px;
+}
+
+.menu3 .text p{
+   font-size: 15px;
+   padding: 2% 10%;
+}
+
+    .ourstr1 .text{
+        font-size: 40px;
+    }
+    
+    .ourstr1 .text h3{
+        justify-content: center;
+    }
+    
+    .ourstr1 .text h2{
+        justify-content: center;
+    }
+
+    .ourstr2 .ourstr-content .grid .box{
+        font-size: 15px;
+    }
+
+    .ourstr2 .text p{
+        padding:0 8% 5% 8%;
+    }
+
+    .contact1 .contact-us {
+        margin: 35% 9%;
+    }  
+.contact1 .contact-us h2{
+    font-size: 40px;
+    color: white;
+}
+
+.contact1 .contact-us p{
+    font-size:15px;
+    padding: 5% 0;
+}
+
+.contact1 .contact-us input{
+    padding: 10px;
+    font-size: 10px;
+}
+
+.contact1 .contact-us a{
+    padding: 10px 18px;
+    font-size: 10px;
+   margin-left: -10%;
+}
+
+.contact2 .contact-us{
+         grid-template-columns: 1fr;
+         padding-top: 10%;
+    }
+
+}
+
+@media screen and (max-width:478px){
+    .home .home-content .title{
+        font-size: 38px;
+    }
+    
+    .home .home-content h3{
+        padding: 8px 0;
+        font-size: 18px;
+    }
+
+    .home .home-content a{
+        padding: 4px 22px;
+        font-size: 14px;    
+    }
+
+    .home .home-content p{
+        font-size: 12px;
+        width: 70%;
+    }
+
+    .menu .text h2{
+        font-size: 35px;
+    }
+    
+    .menu .text p{
+        font-size: 13px;
+    }
+
+.menu .menu-content1 a{
+    padding: 10px 10px;
+    font-size: 15px;
+}
+
+.menu .menu-content1 .text1 h4{
+    font-size: 20px;
+    padding: 10px 0px;
+}
+
+.menu .menu-content1 .text1 p{
+    font-size: 18px;
+}
+
+.menu2 .menu-content2 .text h3{
+    font-size: 38px;
+}
+
+.menu2 .menu-content2 .text p{
+    font-size: 18px;
+}
+
+.menu2 .menu-content2 .text a{
+    padding: 10px 30px;
+    font-size: 15px;
+}
+.menu3 {
+    padding: 25% 0;
+}
+.menu3 .text h2{
+    font-size: 35px;
+}
+
+.menu3 .text p{
+   font-size: 12px;
+   padding: 2% 10%;
+}
+.contact2 .contact-us{
+    padding-top: 15%;
+}
+}
+
+@media screen and (max-width:398px){
+    .home .home-content .title{
+        font-size: 34px;
+    }
+    
+    .home .home-content h3{
+        padding: 5px 0;
+        font-size: 14px;
+    }
+
+    .home .home-content p{
+        font-size: 10px;
+    }
+
+    .menu .text h2{
+        font-size: 32px;
+    }
+    
+    .menu .text p{
+        font-size: 11px;
+    }
+
+    .menu .menu-content1 .text1 h4{
+        font-size: 18px;
+    }
+    
+    .menu .menu-content1 .text1 p{
+        font-size: 16px;
+    }    
+    .menu .menu-content1 img{
+        width: 255px;
+        height: 255px;
+    }
+
+.menu .menu-content1 a{
+    padding: 8px;
+    font-size: 9px;
+}
+.menu2 .menu-content2 .text h3{
+    font-size: 32px;
+}
+
+.menu2 .menu-content2 .text p{
+    font-size: 15px;
+}
+
+.menu2 .menu-content2 .text a{
+    padding: 10px 20px;
+    font-size: 12px;
+}
+.menu3 {
+    padding: 30% 0;
+}
+.menu3 .text h2{
+    font-size: 30px;
+}
+
+.menu3 .text p{
+   font-size: 10px;
+   padding: 2%;
+}
+
+.ourstr1 .text{
+    font-size: 32px;
+    padding-top: 10%;
+}
+
+.ourstr2 .ourstr-content .grid .box{
+    font-size: 13px;
+}
+.ourstr2 .text p{
+    padding:0 3% 5% 3%;
+}
+
+.contact1 .contact-us {
+    margin: 50% 9%;
+}  
+.contact1 .contact-us h2{
+font-size: 38px;
+}
+
+.contact1 .contact-us p{
+font-size:12px;
+}
+
+.contact1 .contact-us input{
+padding: 10px;
+font-size: 10px;
+}
+
+.contact1 .contact-us a{
+padding: 10px 18px;
+font-size: 10px;
+margin-left: -10%;
+}
+}
